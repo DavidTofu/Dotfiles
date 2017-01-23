@@ -13,14 +13,12 @@ Plugin 'https://github.com/altercation/vim-colors-solarized'
 Plugin 'https://github.com/vimwiki/vimwiki'
 Plugin 'https://github.com/scrooloose/nerdtree'
 Plugin 'https://github.com/Xuyuanp/nerdtree-git-plugin'
-Plugin 'https://github.com/NathanNeff/grails-vim'
 Plugin 'https://github.com/wincent/command-t'
 Plugin 'othree/html5.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'gregsexton/MatchTag'
-Plugin 'powerman/vim-plugin-autosess'
-Plugin 'xolox/vim-misc'	" Required for ^
-Plugin 'xolox/vim-easytags'
+Plugin 'Valloric/YouCompleteMe'
+" Plugin 'lervag/vimtex'
 
 
 " Save folds
@@ -57,7 +55,6 @@ set nu
 set mouse=a
 
 " Vim, be normal
-set splitright
 set splitbelow
 
 " Better leader
@@ -65,3 +62,12 @@ let mapleader = ","
 " Resize splits more quickly
 nnoremap <silent> <Leader>a :exe "resize +2" <CR>
 nnoremap <silent> <Leader>aa :exe "resize -2" <CR>
+
+" Vimwiki
+let g:vimwiki_list = [ {'path' : '~/Google Drive/Wiki/vimwiki', 'syntax': 'markdown'},
+			\ {'path': '~/Google Drive/WoL', 'syntax': 'markdown' } ]
+
+" For vim-latexsuite to work
+let g:text_flavor='latex'
+
+set tw=79

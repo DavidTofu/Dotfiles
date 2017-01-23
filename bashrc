@@ -116,5 +116,5 @@ fi
 # Executables here
 PATH=$PATH:~/.bin
 
-# Idea Intellij
-PATH=$PATH:~/idea-UI-15/bin
+# Android home
+ANDROID_HOME=~/Android/Sdk
